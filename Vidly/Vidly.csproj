@@ -271,6 +271,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Movie\Random.cshtml" />
     <Content Include="Views\Movie\Hero.cshtml" />
+    <Content Include="Views\Movie\Language.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
