@@ -11,7 +11,9 @@ namespace Vidly
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            routes.MapMvcAttributeRoutes();
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
 
             //http://localhost:57119/Movie/Released/2025/01 
             //When we wanted to have a custom route, we need to add like this before the default route

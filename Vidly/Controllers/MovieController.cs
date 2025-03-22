@@ -50,5 +50,14 @@ namespace Vidly.Controllers
         {
             return Content(string.Format("Released Year : {0} & Month : {1}", year, month));
         }
+
+        //Route Attributes http://localhost:57119/Movie/MatchedMovie/OG/2025, in this case we no need to 
+        //define any custom route. We should add routes.MapMvcAttributeRoutes(); in the RouteConfig.cs file 
+        //Then only we can able to access the route attributes
+        [Route("Movie/MatchedMovie/{movieName}/{addedYear}")]
+        public ActionResult MatchedMovie(string movieName, int addedYear)
+        {
+            return Content(string.Format("Matched movie : {0} & added in the year : {1}", movieName, addedYear));
+        }
     }
 }
